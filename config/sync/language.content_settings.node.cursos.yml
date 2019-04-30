@@ -1,0 +1,11 @@
+uuid: 7e6e285c-c6ae-483f-bce2-35f3b2fc09de
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.cursos
+id: node.cursos
+target_entity_type_id: node
+target_bundle: cursos
+default_langcode: site_default
+language_alterable: false

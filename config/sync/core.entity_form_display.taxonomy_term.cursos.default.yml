@@ -1,0 +1,54 @@
+uuid: 1ad96608-e705-48aa-b0d0-b259a14e16a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.cursos.field_categoria
+    - field.field.taxonomy_term.cursos.field_descripcion
+    - field.field.taxonomy_term.cursos.field_programa
+    - field.field.taxonomy_term.cursos.field_titulo
+    - taxonomy.vocabulary.cursos
+  module:
+    - file
+id: taxonomy_term.cursos.default
+targetEntityType: taxonomy_term
+bundle: cursos
+mode: default
+content:
+  field_categoria:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_descripcion:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_programa:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_titulo:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  description: true
+  langcode: true
+  name: true
+  path: true

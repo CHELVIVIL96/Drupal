@@ -1,0 +1,24 @@
+uuid: bbb33cc1-4343-4eb3-95d7-9482df53eb0c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.primary-menu
+  module:
+    - system
+  theme:
+    - bartik
+id: primarymenu
+theme: bartik
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:primary-menu'
+settings:
+  id: 'system_menu_block:primary-menu'
+  label: 'Primary Menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: 66384be8-3b51-4078-a049-a36052ca6d6a
+name: 'Tarea 02'
+mail: tarea@tarea.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

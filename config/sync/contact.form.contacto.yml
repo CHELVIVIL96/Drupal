@@ -1,0 +1,12 @@
+uuid: a835c3c6-5573-4744-b4e8-532dff229bdc
+langcode: es
+status: true
+dependencies: {  }
+id: contacto
+label: Contacto
+recipients:
+  - keylor139@gmail.com
+reply: ''
+weight: 0
+message: 'Su Mensaje ha sido enviado'
+redirect: /contact

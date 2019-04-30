@@ -1,0 +1,32 @@
+uuid: f289b854-81c7-4ab6-b308-a3a158ea6fa0
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.contacto
+    - field.field.contact_message.contacto.field_cv_pdf
+  module:
+    - file
+id: contact_message.contacto.default
+targetEntityType: contact_message
+bundle: contacto
+mode: default
+content:
+  field_cv_pdf:
+    weight: 1
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true

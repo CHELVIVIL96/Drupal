@@ -1,0 +1,52 @@
+uuid: 153c2b68-3a90-4236-9453-13e05ae6bfe8
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+    - field.field.contact_message.personal.field_cv_pdf
+  module:
+    - file
+id: contact_message.personal.default
+targetEntityType: contact_message
+bundle: personal
+mode: default
+content:
+  field_cv_pdf:
+    weight: 4
+    settings:
+      progress_indicator: bar
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  mail:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 12
+      placeholder: 'Escribir Mensajae....'
+    region: content
+    third_party_settings: {  }
+  name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Asunto '
+    third_party_settings: {  }
+hidden:
+  copy: true
+  langcode: true
+  preview: true
+  recipient: true

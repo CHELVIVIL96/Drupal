@@ -1,0 +1,27 @@
+uuid: 1bb9fa5a-2c52-4060-bcb9-58313625ddc3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_programa
+    - taxonomy.vocabulary.cursos
+  module:
+    - file
+id: taxonomy_term.cursos.field_programa
+field_name: field_programa
+entity_type: taxonomy_term
+bundle: cursos
+label: Programa
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: '20 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

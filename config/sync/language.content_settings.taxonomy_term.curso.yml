@@ -1,0 +1,11 @@
+uuid: 6fa65d2a-70c3-438b-a0e6-9d551a1b678b
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.curso
+id: taxonomy_term.curso
+target_entity_type_id: taxonomy_term
+target_bundle: curso
+default_langcode: site_default
+language_alterable: false

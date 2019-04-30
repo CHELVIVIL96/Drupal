@@ -1,0 +1,27 @@
+uuid: 0dc11807-8f84-430a-8dd7-31521f46ef4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - contact.form.contacto
+    - field.storage.contact_message.field_cv_pdf
+  module:
+    - file
+id: contact_message.contacto.field_cv_pdf
+field_name: field_cv_pdf
+entity_type: contact_message
+bundle: contacto
+label: 'CV PDF'
+description: 'Suba su CV en pdf o txt'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: '20 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

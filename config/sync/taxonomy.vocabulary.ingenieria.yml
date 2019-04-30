@@ -1,0 +1,9 @@
+uuid: 47abd788-e499-488b-b957-6483c5c35a36
+langcode: es
+status: true
+dependencies: {  }
+name: Ingenieria
+vid: ingenieria
+description: Curso
+hierarchy: 0
+weight: 0

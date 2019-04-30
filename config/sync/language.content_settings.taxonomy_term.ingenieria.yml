@@ -1,0 +1,11 @@
+uuid: 5fe77b10-ad68-4679-821b-c52df2df4005
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ingenieria
+id: taxonomy_term.ingenieria
+target_entity_type_id: taxonomy_term
+target_bundle: ingenieria
+default_langcode: site_default
+language_alterable: false
